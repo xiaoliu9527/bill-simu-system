@@ -3,22 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>bill-simu-system</artifactId>
+        <artifactId>bill-simu-module</artifactId>
         <groupId>com.simu</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bill-simu-module</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>bill-simu-common</module>
-        <module>bill-simu-controller</module>
-        <module>bill-simu-dao</module>
-        <module>bill-simu-dto</module>
-        <module>bill-simu-entity</module>
-        <module>bill-simu-service</module>
-    </modules>
+    <artifactId>bill-simu-dao</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
