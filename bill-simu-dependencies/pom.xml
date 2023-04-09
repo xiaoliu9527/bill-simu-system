@@ -20,6 +20,9 @@
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
         <knife4j.version>3.0.3</knife4j.version>
+        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
+        <druid.version>1.1.21</druid.version>
+        <mybatis-plus.version>3.4.1</mybatis-plus.version>
     </properties>
 
     <!-- dependencyManagement只是声明依赖，并不实现引入，因此子项目需要显示的声明需要用的依赖。
@@ -29,6 +32,26 @@
     -->
     <dependencyManagement>
         <dependencies>
+            <!--mybatis-plus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <!-- 数据库驱动,可根据自己需要自行删减，默认使用mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+
+            <!--数据库连接池-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
             <!--hutool-->
             <dependency>
                 <groupId>cn.hutool</groupId>

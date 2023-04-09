@@ -39,7 +39,7 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <!--swagger2
+        <!-- swagger2 -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -51,7 +51,20 @@
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-spring-boot-starter</artifactId>
-        </dependency>-->
+        </dependency>
+
+        <!-- controller -->
+        <dependency>
+            <groupId>com.simu</groupId>
+            <artifactId>bill-simu-controller</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- dao -->
+        <dependency>
+            <groupId>com.simu</groupId>
+            <artifactId>bill-simu-dao</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
     </dependencies>
 
 
